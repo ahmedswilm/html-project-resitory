@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Functional Programming Paradigm</h1>
+<h2>links</h2>
+<ul>
+  <li><a href="index.html">Main page</a></li>
+  <li><a href="history of programming languages.html">History of programming languages</a></li>
+  <li><a href="types of programming languages.html">Types of programming languages</a></li>
+  <li><a href="Functional Programming Paradigm.html">Functional Programming Paradigm</a></li>
+  <li><a href="Future of programming languages.html">Future of programming languages</a></li>
+</ul>
+
+<h2>Introduction</h2>
+<b>Useful writing computer programs is a programming worldview stuck which we attempt to tough situation everything in unadulterated numerical capacities style. It is a decisive sort of programming style. Its fundamental spotlight is on "what to settle" as opposed to a basic style where the primary center is "the means by which to tackle". It utilizes articulations rather than proclamations. An articulation is assessed to create a worth though an announcement is executed to dole out factors. Those capacities have some exceptional highlights examined beneath.</b>
+<h2>Functional Programming is based on Lambda Calculus:</h2>
+<b>Lambda math is system created by Alonzo Church to examine calculations with capacities. It very well may be called as the littlest programming language of the world. It gives the meaning of what is calculable. Anything that can be processed by lambda math is calculable. It is equal to Turing machine in its capacity to register. It gives a hypothetical structure to depicting capacities and their assessment. It shapes the premise of practically all current utilitarian programming dialects. 
+
+Reality: Alan Turing was an understudy of Alonzo Church who made Turing machine which established the framework of basic programming style.</b>
+<p><b>Programming Languages that support functional programming: Haskell, JavaScript, Scala, Erlang, Lisp, ML, Clojure, OCaml, Common Lisp, Racket.</b></p>
+<h2>Concepts of functional programming:</h2>
+<ul>
+<li>pure functions</li>
+<li>Recursion</li>
+<li>Referential transparency</li>
+<li>Functions are First-Class and can be Higher-Order</li>
+<li>Variables are Immutable</li>
+</ul>
+<h2>Pure functions:</h2><p> These functions have two principle properties. In the first place, they generally produce a similar yield for same contentions regardless of whatever else. 
+Furthermore, they have no symptoms for example they do adjust any contention or worldwide factors or yield something. 
+
+Later property is called unchanging nature. The unadulterated capacities just outcome is the worth it returns. They are deterministic. 
+
+Projects done utilizing practical writing computer programs are anything but difficult to troubleshoot in light of the fact that unadulterated capacities have no reaction or concealed I/O. Unadulterated capacities additionally make it simpler to compose equal/simultaneous applications. At the point when the code is written in this style, a shrewd compiler can do numerous things – it can parallelize the guidelines, hold back to assess results when need them, and retain the outcomes since the outcomes never show signs of change as long as the information doesn't change.</p>
+<p><h3>example of the pure function:</h3></p>
+<b>sum(x, y)           // sum is function taking x and y as arguments</b>
+ <p><b> return x + y    // sum is returning sum of x and y without changing them</b></p>
+<h2>Recursion:</h2><p>There are no “for” or “while” loop in functional languages. Iteration in functional languages is implemented through recursion. Recursive functions repeatedly call themselves, until it reaches the base case.</p>
+<h3>example of the recursive function:</h3>
+<p>fib(n)</p>
+<p> if (n <= 1)</p>
+<p>return 1;</p>
+<p>else</p>
+<p>  return fib(n - 1) + fib(n - 2);</p>
+<h2>Referential transparency:</h2>
+<p>In practical projects factors once characterized don't change their incentive all through the program. Utilitarian projects don't have task articulations. In the event that we need to store some esteem, we characterize new factors. This wipes out any odds of symptoms on the grounds that any factor can be supplanted with its real incentive anytime of execution. Condition of any factor is consistent at any moment. </p>
+<h3>example</h3>
+<p>x = x + 1 // this changes the value assigned to the variable x.</p>
+<p> // So the expression is not referentially transparent. </p>
+<h2>Functions are First-Class and can be Higher-Order:</h2>
+<p>First-class functions are treated as top of the line variable. The top of the line factors can be passed to capacities as parameter, can be come back from capacities or put away in information structures. Higher request capacities are the capacities that accept different capacities as contentions and they can likewise bring capacities back.</p>
+<h3>example</h3>
+<p>show_output(f)            // function show_output is declared taking argument f </p>
+<p> // which are another function</p>
+<p>f();                  // calling passed function</p>
+<p>print_gfg()             // declaring another function </p>
+<p> print("hello gfg");</p>
+<p>show_output(print_gfg)  // passing function in another function</p>
+<h2>Variables are Immutable:</h2>
+<p>In functional programming, we can't change a variable after it's been introduced. We can make new factors – yet we can't change existing factors, and this truly assists with keeping up state all through the runtime of a program. When we make a variable and set its worth, we can have full certainty realizing that the estimation of that variable will never show signs of change.</p>
+<h2>Advantages and Disadvantages of Functional programming</h2>
+<h2>Advantages</h2>
+<ol>
+<li>Pure functions are easier to understand because they don’t change any states and depend only on the input given to them. Whatever output they produce is the return value they give. Their function signature gives all the information about them i.e. their return type and their arguments.</li>
+<li>The ability of functional programming languages to treat functions as values and pass them to functions as parameters make the code more readable and easily understandable.</li>
+<li>Testing and debugging is easier. Since pure functions take only arguments and produce output, they don’t produce any changes don’t take input or produce some hidden output. They use immutable values, so it becomes easier to check some problems in programs written uses pure functions.</li>
+<li>It is used to implement concurrency/parallelism because pure functions don’t change variables or any other data outside of it.</li>
+<li>It adopts lazy evaluation which avoids repeated evaluation because the value is evaluated and stored only when it is needed.</li>
+</ol>
+<h2>Disadvantages</h2>
+<ol>
+<li>Sometimes writing pure functions can reduce the readability of code.</li>
+<li>Writing programs in recursive style instead of using loops can be bit intimidating.</li>
+<li>Writing pure functions are easy but combining them with rest of application and I/O operations is the difficult task.</li>
+<li>Immutable values and recursion can lead to decrease in performance.</li>
+</ol>
+<h2>Applications</h2>
+<ul>
+<li>It is used in mathematical computations.</li>
+<li>It is needed where concurrency or parallelism is required.</li>
+</ul>
+<body bgcolor="silver">
+
+
+
+
+
+</body>
+</html>
